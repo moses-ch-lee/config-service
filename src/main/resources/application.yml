@@ -17,8 +17,6 @@ spring:
       server:
         git:
           uri: https://github.com/moses-ch-lee/config-repo.git
-          #username: moseschlee@gmail.com
-          #password: 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
           default-label: master
           timeout: 5
           clone-on-start: true
