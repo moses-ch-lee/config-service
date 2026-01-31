@@ -1,0 +1,25 @@
+#spring.application.name=config-service
+
+server:
+  port: 8888
+  tomcat:
+    connection-timeout: 2s
+    keep-alive-timeout: 15s
+    threads:
+      max: 50
+      min-spare: 5
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/moses-ch-lee/config-repo.git
+          #username: moseschlee@gmail.com
+          #password: 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
+          default-label: master
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
