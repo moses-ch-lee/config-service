@@ -67,15 +67,13 @@
                 <configuration>
                     <imageName>${project.imageName}</imageName>
                     <publish>${project.isPublish}</publish>
-                    <!--
                     <docker>
                         <publishRegistry>
                             <username>${registry.username}</username>
-                            <password>${registry.token}}</password>
+                            <password>${registry.token}</password>
                             <url>${registry.url}</url>
                         </publishRegistry>
                     </docker>
-                    -->
                 </configuration>
                 <executions>
                     <execution>
