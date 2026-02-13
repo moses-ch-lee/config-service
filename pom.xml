@@ -67,6 +67,7 @@
                 <configuration>
                     <imageName>${project.imageName}</imageName>
                     <publish>${project.isPublish}</publish>
+                    <!--
                     <docker>
                         <publishRegistry>
                             <username>${registry.username}</username>
@@ -74,6 +75,7 @@
                             <url>${registry.url}</url>
                         </publishRegistry>
                     </docker>
+                    -->
                 </configuration>
                 <executions>
                     <execution>

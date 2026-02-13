@@ -64,7 +64,6 @@ jobs:
             -Dregistry.username=${{ github.actor }} \
             -Dregistry.token=${{ secrets.GITHUB_TOKEN }} \
             -Dregistry.url=${{ env.REGISTRY }}
-            -Dproject.isPublish=false
       - name: OCI image vulnerability scanning
         uses: anchore/scan-action@v7
         id: scan
